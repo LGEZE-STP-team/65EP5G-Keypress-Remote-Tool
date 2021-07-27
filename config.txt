@@ -1,0 +1,50 @@
+# Values in this file will overwrite the values used in main.
+
+# The IP Address of the display to connect to.
+ip = '192.168.100.128'
+
+# Whether to attempt to use a saved key from the previous session.
+use_registered_key = True
+
+# Dictionary to map keys to commands. All commands are assigned by default.
+# Keys are as defined by Pynput, more info here: https://pynput.readthedocs.io/en/latest/keyboard.html
+command_dictionary = {
+    '1':            profile_1,
+    '2':            profile_2,
+    '3':            profile_3,
+    '4':            profile_4,
+    '5':            profile_5,
+    '6':            profile_6,
+    '7':            profile_7,
+    '8':            profile_8,
+    '9':            profile_9,
+    '0':            profile_10,
+    Key.left:       left,
+    Key.right:      right,
+    Key.up:         up,
+    Key.down:       down,
+    Key.enter:      enter,
+    Key.backspace:  back,
+    'x':            exit,
+    'm':            menu,
+    Key.f1:         f1,
+    Key.f2:         f2,
+    Key.f3:         f3,
+    Key.f4:         f4,
+    Key.f5:         f5,
+    'p':            print_inputs,
+    'q':            set_hdmi1,
+    'w':            set_hdmi2,
+    'e':            set_sdi1,
+    'r':            set_sdi2,
+    't':            set_sdi3,
+    'y':            set_sdi4,
+    'u':            set_sdi_dual12,
+    'i':            set_sdi_dual34,
+    'o':            set_sdi_quad_auto,
+    'a':            set_sdi_quad_2SI,
+    's':            set_sdi_quad_square,
+    'd':            set_sdi_quad_view,
+    'f':            set_sfp
+}
+

@@ -25,7 +25,7 @@ Example:
 ip = '192.168.1.10'
 ```
 
-Key configuration:
+Key configuration:  
 Commands can be assigned by modifying the command_dictionary in config.txt. The provided config.txt has all possible API requests assigned to keys. Keys are defined according to Pynput Keys which are enumerated here: https://pynput.readthedocs.io/en/latest/keyboard.html#pynput.keyboard.Key  
 
 By default:  

@@ -91,9 +91,11 @@ async def send_command(command_to_send, verbose=False):
             await ws.send(json.dumps(command_to_send))
 
             resp = await ws.recv()
-            helpers.resp_print(resp)
             if verbose:
                 print(resp)
+            else:
+                helpers.resp_print(resp)
+            return resp
     except:
         print('Command registration failed, please relaunch the script.')
         helpers.remove_client_key()
@@ -109,11 +111,14 @@ def send_input(select):
 
 
 def select_profile(index):
-    asyncio.run(send_command(commands.load_profile(index), False))
+    asyncio.run(send_command(commands.load_profile(index)))
 
 
 def print_inputs():
-    asyncio.run(send_command(commands.get_input_list, verbose=True))
+    resp = asyncio.run(send_command(commands.get_input_list))
+    obj = json.loads(resp)
+    formatted_str = json.dumps(obj, indent=2)
+    print(formatted_str)
 
 
 # Dictionary-callable commands
@@ -518,3 +523,4 @@ if helpers.ping(ip):
         print('Error: Please ensure the 65EP5G is on the same local network as this machine and there are no firewalls/subnet masks preventing the connection.')
 else:
     print('Display not found at provided address. Please verify address and network configuration and try again.')
+

@@ -163,3 +163,4 @@ open_manifest = {
         "CONTROL_INPUT_MEDIA_PLAYBACK"
     ]
 }
+

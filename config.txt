@@ -1,9 +1,10 @@
 # Values in this file will overwrite the values used in main.
 
 # The IP Address of the display to connect to.
-ip = '192.168.100.128'
+ip = '192.168.1.137'
 
 # Whether to attempt to use a saved key from the previous session.
+# If the key is not valid for the display, the key will be deleted and PIN pairing will be attempted.
 use_registered_key = True
 
 # Dictionary to map keys to commands. All commands are assigned by default.

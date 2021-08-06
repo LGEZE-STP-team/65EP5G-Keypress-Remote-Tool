@@ -2,7 +2,7 @@ Welcome to the 65EP5G Keypress Demo app. This application allows for calling of 
 
 Installation:
 
-This application requires Python>=3.7. Please find the latest release at https://www.python.org/downloads/ and follow the instructions for your Operating System. When installing on Windows, check the option to "Add Python to PATH" and "Disable path length limit." Verify the most recent version on your system is invoked from the command line. You can check this by using 'py -V' on Windows or 'python3 -V' on MacOS.
+This application requires Python>=3.7. Please find the latest release at https://www.python.org/downloads/ and follow the instructions for your Operating System. When installing on Windows, check the option to "Add Python to PATH" and "Disable PATH length limit." Verify the most recent version on your system is invoked from the command line. You can check this by using 'py -V' on Windows or 'python3 -V' on MacOS.
 
 Windows:
 Double click start.bat. This will install all dependencies and start the script.

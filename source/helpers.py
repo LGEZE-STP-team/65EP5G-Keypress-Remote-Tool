@@ -36,6 +36,8 @@ def resp_print(greeting):
         err_msg = decoded['error']
         err_msg = 'Error: ' + err_msg
         print(err_msg)
+        return True
+    return False
 
 
 def ping(host):
@@ -44,12 +46,8 @@ def ping(host):
     A host may not respond to a ping (ICMP) request even if the host name is valid, but this shouldn't be the case with the 65EP5G.
     May return false positives on Windows.
     """
-    # Option for the number of packets as a function of
     param = '-n' if platform.system().lower()=='windows' else '-c'
-
-    # Building the command. Ex: "ping -c 1 google.com"
     command = ['ping', param, '1', host]
-
     return subprocess.call(command) == 0
 
 
